@@ -1,0 +1,20 @@
+﻿@model List<WebMaster>
+@{
+    ViewData["Title"] = "PersonelListe";
+}
+
+<h1>PersonelListe</h1>
+    <ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Ad  @item.Soyad @item.Mail</li>
+    }
+    </ul>
+
+    <ul>
+    @foreach (var item in ViewBag.Liste)
+    {
+        <li>@item.Ad  @item.Soyad @item.Mail</li>
+    }
+    </ul>
+
